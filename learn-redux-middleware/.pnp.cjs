@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-scripts", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:5.0.1"],\
             ["redux", "npm:4.2.1"],\
             ["redux-actions", "npm:3.0.0"],\
+            ["redux-logger", "npm:3.0.6"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -7692,6 +7693,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["deep-diff", [\
+        ["npm:0.3.8", {\
+          "packageLocation": "./.yarn/cache/deep-diff-npm-0.3.8-a2a66d74dd-8a0fb6cbe4.zip/node_modules/deep-diff/",\
+          "packageDependencies": [\
+            ["deep-diff", "npm:0.3.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["deep-equal", [\
         ["npm:2.2.2", {\
           "packageLocation": "./.yarn/cache/deep-equal-npm-2.2.2-11ec0f8326-eb61c35157.zip/node_modules/deep-equal/",\
@@ -11811,6 +11821,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-scripts", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:5.0.1"],\
             ["redux", "npm:4.2.1"],\
             ["redux-actions", "npm:3.0.0"],\
+            ["redux-logger", "npm:3.0.6"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -15367,6 +15378,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["redux-actions", "npm:3.0.0"],\
             ["just-curry-it", "npm:5.3.0"],\
             ["reduce-reducers", "npm:1.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["redux-logger", [\
+        ["npm:3.0.6", {\
+          "packageLocation": "./.yarn/cache/redux-logger-npm-3.0.6-4c0c652262-c40f63c44c.zip/node_modules/redux-logger/",\
+          "packageDependencies": [\
+            ["redux-logger", "npm:3.0.6"],\
+            ["deep-diff", "npm:0.3.8"]\
           ],\
           "linkType": "HARD"\
         }]\

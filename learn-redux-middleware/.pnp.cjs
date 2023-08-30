@@ -33,7 +33,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:13.5.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:18.2.0"],\
+            ["react-redux", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:8.1.2"],\
             ["react-scripts", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:5.0.1"],\
+            ["redux", "npm:4.2.1"],\
+            ["redux-actions", "npm:3.0.0"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -4681,6 +4684,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/hoist-non-react-statics", [\
+        ["npm:3.3.1", {\
+          "packageLocation": "./.yarn/cache/@types-hoist-non-react-statics-npm-3.3.1-c0081332b2-2c0778570d.zip/node_modules/@types/hoist-non-react-statics/",\
+          "packageDependencies": [\
+            ["@types/hoist-non-react-statics", "npm:3.3.1"],\
+            ["@types/react", "npm:18.2.21"],\
+            ["hoist-non-react-statics", "npm:3.3.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/html-minifier-terser", [\
         ["npm:6.1.0", {\
           "packageLocation": "./.yarn/cache/@types-html-minifier-terser-npm-6.1.0-707ea07fcb-eb843f6a8d.zip/node_modules/@types/html-minifier-terser/",\
@@ -4972,6 +4986,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-trusted-types-npm-2.0.3-225cf76fb4-4794804bc4.zip/node_modules/@types/trusted-types/",\
           "packageDependencies": [\
             ["@types/trusted-types", "npm:2.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/use-sync-external-store", [\
+        ["npm:0.0.3", {\
+          "packageLocation": "./.yarn/cache/@types-use-sync-external-store-npm-0.0.3-875a91a914-161ddb8eec.zip/node_modules/@types/use-sync-external-store/",\
+          "packageDependencies": [\
+            ["@types/use-sync-external-store", "npm:0.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9827,6 +9850,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["hoist-non-react-statics", [\
+        ["npm:3.3.2", {\
+          "packageLocation": "./.yarn/cache/hoist-non-react-statics-npm-3.3.2-e7b709e6c1-b153827042.zip/node_modules/hoist-non-react-statics/",\
+          "packageDependencies": [\
+            ["hoist-non-react-statics", "npm:3.3.2"],\
+            ["react-is", "npm:16.13.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["hoopy", [\
         ["npm:0.1.4", {\
           "packageLocation": "./.yarn/cache/hoopy-npm-0.1.4-32e7a5b08e-cfa60c7684.zip/node_modules/hoopy/",\
@@ -11688,6 +11721,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["just-curry-it", [\
+        ["npm:5.3.0", {\
+          "packageLocation": "./.yarn/cache/just-curry-it-npm-5.3.0-343c14ce2a-7a7d2e118c.zip/node_modules/just-curry-it/",\
+          "packageDependencies": [\
+            ["just-curry-it", "npm:5.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["keyv", [\
         ["npm:4.5.3", {\
           "packageLocation": "./.yarn/cache/keyv-npm-4.5.3-d2382300dd-3ffb4d5b72.zip/node_modules/keyv/",\
@@ -11765,7 +11807,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:13.5.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:18.2.0"],\
+            ["react-redux", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:8.1.2"],\
             ["react-scripts", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:5.0.1"],\
+            ["redux", "npm:4.2.1"],\
+            ["redux-actions", "npm:3.0.0"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -15104,6 +15149,46 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-redux", [\
+        ["npm:8.1.2", {\
+          "packageLocation": "./.yarn/cache/react-redux-npm-8.1.2-ac4f2e7674-4d5976b0f7.zip/node_modules/react-redux/",\
+          "packageDependencies": [\
+            ["react-redux", "npm:8.1.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:8.1.2", {\
+          "packageLocation": "./.yarn/__virtual__/react-redux-virtual-b370b5fe00/0/cache/react-redux-npm-8.1.2-ac4f2e7674-4d5976b0f7.zip/node_modules/react-redux/",\
+          "packageDependencies": [\
+            ["react-redux", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:8.1.2"],\
+            ["@babel/runtime", "npm:7.22.11"],\
+            ["@types/hoist-non-react-statics", "npm:3.3.1"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["@types/react-native", null],\
+            ["@types/redux", null],\
+            ["@types/use-sync-external-store", "npm:0.0.3"],\
+            ["hoist-non-react-statics", "npm:3.3.2"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:18.2.0"],\
+            ["react-is", "npm:18.2.0"],\
+            ["react-native", null],\
+            ["redux", "npm:4.2.1"],\
+            ["use-sync-external-store", "virtual:b370b5fe00a3ae43c9e570b36eace1b4b1818e8db8f777d42f7f04f27ed700f1c5ec54c34e618c67a2bb3e8174b506042ebf668cceb9fd7ecaecd6784fe4edcd#npm:1.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react-native",\
+            "@types/react",\
+            "@types/redux",\
+            "react-dom",\
+            "react-native",\
+            "react",\
+            "redux"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-refresh", [\
         ["npm:0.11.0", {\
           "packageLocation": "./.yarn/cache/react-refresh-npm-0.11.0-c0a4e59e76-112178a05b.zip/node_modules/react-refresh/",\
@@ -15252,6 +15337,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["redent", "npm:3.0.0"],\
             ["indent-string", "npm:4.0.0"],\
             ["strip-indent", "npm:3.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["reduce-reducers", [\
+        ["npm:1.0.4", {\
+          "packageLocation": "./.yarn/cache/reduce-reducers-npm-1.0.4-5b952f0836-9b3648fa50.zip/node_modules/reduce-reducers/",\
+          "packageDependencies": [\
+            ["reduce-reducers", "npm:1.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["redux", [\
+        ["npm:4.2.1", {\
+          "packageLocation": "./.yarn/cache/redux-npm-4.2.1-e7e2cf2e37-f63b9060c3.zip/node_modules/redux/",\
+          "packageDependencies": [\
+            ["redux", "npm:4.2.1"],\
+            ["@babel/runtime", "npm:7.22.11"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["redux-actions", [\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/redux-actions-npm-3.0.0-ba1284426b-29cbf70f76.zip/node_modules/redux-actions/",\
+          "packageDependencies": [\
+            ["redux-actions", "npm:3.0.0"],\
+            ["just-curry-it", "npm:5.3.0"],\
+            ["reduce-reducers", "npm:1.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -17186,6 +17301,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["url-parse", "npm:1.5.10"],\
             ["querystringify", "npm:2.2.0"],\
             ["requires-port", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["use-sync-external-store", [\
+        ["npm:1.2.0", {\
+          "packageLocation": "./.yarn/cache/use-sync-external-store-npm-1.2.0-44f75d2564-5c639e0f8d.zip/node_modules/use-sync-external-store/",\
+          "packageDependencies": [\
+            ["use-sync-external-store", "npm:1.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:b370b5fe00a3ae43c9e570b36eace1b4b1818e8db8f777d42f7f04f27ed700f1c5ec54c34e618c67a2bb3e8174b506042ebf668cceb9fd7ecaecd6784fe4edcd#npm:1.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/use-sync-external-store-virtual-012f3a28b4/0/cache/use-sync-external-store-npm-1.2.0-44f75d2564-5c639e0f8d.zip/node_modules/use-sync-external-store/",\
+          "packageDependencies": [\
+            ["use-sync-external-store", "virtual:b370b5fe00a3ae43c9e570b36eace1b4b1818e8db8f777d42f7f04f27ed700f1c5ec54c34e618c67a2bb3e8174b506042ebf668cceb9fd7ecaecd6784fe4edcd#npm:1.2.0"],\
+            ["@types/react", null],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\

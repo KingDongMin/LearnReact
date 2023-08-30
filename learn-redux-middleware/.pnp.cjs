@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["redux", "npm:4.2.1"],\
             ["redux-actions", "npm:3.0.0"],\
             ["redux-logger", "npm:3.0.6"],\
+            ["redux-thunk", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:2.4.2"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -11822,6 +11823,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["redux", "npm:4.2.1"],\
             ["redux-actions", "npm:3.0.0"],\
             ["redux-logger", "npm:3.0.6"],\
+            ["redux-thunk", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:2.4.2"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -15388,6 +15390,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["redux-logger", "npm:3.0.6"],\
             ["deep-diff", "npm:0.3.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["redux-thunk", [\
+        ["npm:2.4.2", {\
+          "packageLocation": "./.yarn/cache/redux-thunk-npm-2.4.2-3acdaaf7b0-c7f757f6c3.zip/node_modules/redux-thunk/",\
+          "packageDependencies": [\
+            ["redux-thunk", "npm:2.4.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:2.4.2", {\
+          "packageLocation": "./.yarn/__virtual__/redux-thunk-virtual-96bd3fc5a4/0/cache/redux-thunk-npm-2.4.2-3acdaaf7b0-c7f757f6c3.zip/node_modules/redux-thunk/",\
+          "packageDependencies": [\
+            ["redux-thunk", "virtual:eb8c77d9a4f9e2dbb6ce70eeb9d86ffac4761fa9b721dabc8526c8706fbbb75b1e45c9f877f17d946093c09287d864e3e05b78e8649c81f1fbe51f552afd1e09#npm:2.4.2"],\
+            ["@types/redux", null],\
+            ["redux", "npm:4.2.1"]\
+          ],\
+          "packagePeers": [\
+            "@types/redux",\
+            "redux"\
           ],\
           "linkType": "HARD"\
         }]\

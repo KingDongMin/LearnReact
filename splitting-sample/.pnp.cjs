@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@loadable/component", "virtual:59d0a281e99deaa2a50ef75573fefa9c0b32da2e24cf351abc1f6b2d9a07eac26bb752450b92ac60a731bdfbdf8bdcd2b2f305901e8da9f6ad445ab910a3c064#npm:5.15.3"],\
             ["@testing-library/jest-dom", "npm:5.17.0"],\
             ["@testing-library/react", "virtual:59d0a281e99deaa2a50ef75573fefa9c0b32da2e24cf351abc1f6b2d9a07eac26bb752450b92ac60a731bdfbdf8bdcd2b2f305901e8da9f6ad445ab910a3c064#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:59d0a281e99deaa2a50ef75573fefa9c0b32da2e24cf351abc1f6b2d9a07eac26bb752450b92ac60a731bdfbdf8bdcd2b2f305901e8da9f6ad445ab910a3c064#npm:13.5.0"],\
@@ -3966,6 +3967,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@leichtgewicht-ip-codec-npm-2.0.4-dd4d657af8-468de1f04d.zip/node_modules/@leichtgewicht/ip-codec/",\
           "packageDependencies": [\
             ["@leichtgewicht/ip-codec", "npm:2.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@loadable/component", [\
+        ["npm:5.15.3", {\
+          "packageLocation": "./.yarn/cache/@loadable-component-npm-5.15.3-ae5e6f6d3b-78ac341465.zip/node_modules/@loadable/component/",\
+          "packageDependencies": [\
+            ["@loadable/component", "npm:5.15.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:59d0a281e99deaa2a50ef75573fefa9c0b32da2e24cf351abc1f6b2d9a07eac26bb752450b92ac60a731bdfbdf8bdcd2b2f305901e8da9f6ad445ab910a3c064#npm:5.15.3", {\
+          "packageLocation": "./.yarn/__virtual__/@loadable-component-virtual-973936d089/0/cache/@loadable-component-npm-5.15.3-ae5e6f6d3b-78ac341465.zip/node_modules/@loadable/component/",\
+          "packageDependencies": [\
+            ["@loadable/component", "virtual:59d0a281e99deaa2a50ef75573fefa9c0b32da2e24cf351abc1f6b2d9a07eac26bb752450b92ac60a731bdfbdf8bdcd2b2f305901e8da9f6ad445ab910a3c064#npm:5.15.3"],\
+            ["@babel/runtime", "npm:7.22.11"],\
+            ["@types/react", null],\
+            ["hoist-non-react-statics", "npm:3.3.2"],\
+            ["react", "npm:18.2.0"],\
+            ["react-is", "npm:16.13.1"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9823,6 +9849,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/he-npm-1.2.0-3b73a2ff07-3d4d6babcc.zip/node_modules/he/",\
           "packageDependencies": [\
             ["he", "npm:1.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["hoist-non-react-statics", [\
+        ["npm:3.3.2", {\
+          "packageLocation": "./.yarn/cache/hoist-non-react-statics-npm-3.3.2-e7b709e6c1-b153827042.zip/node_modules/hoist-non-react-statics/",\
+          "packageDependencies": [\
+            ["hoist-non-react-statics", "npm:3.3.2"],\
+            ["react-is", "npm:16.13.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -16111,6 +16147,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["splitting-sample", "workspace:."],\
+            ["@loadable/component", "virtual:59d0a281e99deaa2a50ef75573fefa9c0b32da2e24cf351abc1f6b2d9a07eac26bb752450b92ac60a731bdfbdf8bdcd2b2f305901e8da9f6ad445ab910a3c064#npm:5.15.3"],\
             ["@testing-library/jest-dom", "npm:5.17.0"],\
             ["@testing-library/react", "virtual:59d0a281e99deaa2a50ef75573fefa9c0b32da2e24cf351abc1f6b2d9a07eac26bb752450b92ac60a731bdfbdf8bdcd2b2f305901e8da9f6ad445ab910a3c064#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:59d0a281e99deaa2a50ef75573fefa9c0b32da2e24cf351abc1f6b2d9a07eac26bb752450b92ac60a731bdfbdf8bdcd2b2f305901e8da9f6ad445ab910a3c064#npm:13.5.0"],\

@@ -81,6 +81,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["webpack", "virtual:1beecb104babd02898e696cca7f7b6cb7a3ea1297b09ee6365702d051eaf009610036d1683f59d9a204fc4e004adf8dd896cd36e0c3631aa0bf3a50d4057e17a#npm:5.88.2"],\
             ["webpack-dev-server", "virtual:1beecb104babd02898e696cca7f7b6cb7a3ea1297b09ee6365702d051eaf009610036d1683f59d9a204fc4e004adf8dd896cd36e0c3631aa0bf3a50d4057e17a#npm:4.15.1"],\
             ["webpack-manifest-plugin", "virtual:1beecb104babd02898e696cca7f7b6cb7a3ea1297b09ee6365702d051eaf009610036d1683f59d9a204fc4e004adf8dd896cd36e0c3631aa0bf3a50d4057e17a#npm:4.1.1"],\
+            ["webpack-node-externals", "npm:3.0.0"],\
             ["workbox-webpack-plugin", "virtual:1beecb104babd02898e696cca7f7b6cb7a3ea1297b09ee6365702d051eaf009610036d1683f59d9a204fc4e004adf8dd896cd36e0c3631aa0bf3a50d4057e17a#npm:6.6.0"]\
           ],\
           "linkType": "SOFT"\
@@ -16266,6 +16267,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["webpack", "virtual:1beecb104babd02898e696cca7f7b6cb7a3ea1297b09ee6365702d051eaf009610036d1683f59d9a204fc4e004adf8dd896cd36e0c3631aa0bf3a50d4057e17a#npm:5.88.2"],\
             ["webpack-dev-server", "virtual:1beecb104babd02898e696cca7f7b6cb7a3ea1297b09ee6365702d051eaf009610036d1683f59d9a204fc4e004adf8dd896cd36e0c3631aa0bf3a50d4057e17a#npm:4.15.1"],\
             ["webpack-manifest-plugin", "virtual:1beecb104babd02898e696cca7f7b6cb7a3ea1297b09ee6365702d051eaf009610036d1683f59d9a204fc4e004adf8dd896cd36e0c3631aa0bf3a50d4057e17a#npm:4.1.1"],\
+            ["webpack-node-externals", "npm:3.0.0"],\
             ["workbox-webpack-plugin", "virtual:1beecb104babd02898e696cca7f7b6cb7a3ea1297b09ee6365702d051eaf009610036d1683f59d9a204fc4e004adf8dd896cd36e0c3631aa0bf3a50d4057e17a#npm:6.6.0"]\
           ],\
           "linkType": "SOFT"\
@@ -17658,6 +17660,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/webpack",\
             "webpack"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["webpack-node-externals", [\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/webpack-node-externals-npm-3.0.0-72d3aecadb-355080c35c.zip/node_modules/webpack-node-externals/",\
+          "packageDependencies": [\
+            ["webpack-node-externals", "npm:3.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\

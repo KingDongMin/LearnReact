@@ -11931,6 +11931,7 @@ __metadata:
     webpack: ^5.64.4
     webpack-dev-server: ^4.6.0
     webpack-manifest-plugin: ^4.0.2
+    webpack-node-externals: ^3.0.0
     workbox-webpack-plugin: ^6.4.1
   languageName: unknown
   linkType: soft
@@ -13074,6 +13075,13 @@ __metadata:
   peerDependencies:
     webpack: ^4.44.2 || ^5.47.0
   checksum: 426982030d3b0ef26432d98960ee1fa33889d8f0ed79b3d2c8e37be9b4e4beba7524c60631297ea557c642a340b76d70b0eb6a1e08b86a769409037185795038
+  languageName: node
+  linkType: hard
+
+"webpack-node-externals@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "webpack-node-externals@npm:3.0.0"
+  checksum: 355080c35c821115b97dda8c93d9d0565a90a6012a532324eb0d6a64f8f0d609431fd29504fc7ce414755841ac14f601f3eef99472c2c5dc00233b504ebe73f2
   languageName: node
   linkType: hard
 

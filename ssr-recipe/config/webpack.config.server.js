@@ -25,7 +25,7 @@ module.exports = {
         path: paths.ssrBuild, //빌드 경로
         filename: 'server.js', // 빌드 파일 이름
         chunkFilename : 'js/[name].chunk.js', // 청크 파일 이름
-        publicPath:paths.publicUrlOrPath, // 정적 파일이 제공될 경로
+        publicPath: paths.publicUrlOrPath, // 정적 파일이 제공될 경로
     },
     // 여기까지 기본 설정, 그 다음은 로더 설정
     // 로더 : 빌드를 하기위해 파일 불러올때 파일 확장자에 따라 다른 빌드 작업을 해주는 것
@@ -64,8 +64,8 @@ module.exports = {
                                     },
                                 ],  
                             ],
-                            caheDirectory:true,
-                            caheCompression:false,
+                            cacheDirectory:true,
+                            cacheCompression:false,
                             compact:false,
                         },
                     },
@@ -109,7 +109,7 @@ module.exports = {
                                     },
                                 },
                             },
-                            require.resolve('sass-loader')
+                            require.resolve('sass-loader'),
                         ],
                     },
                     // Sass + CSS Module을 위한 처리
@@ -118,7 +118,7 @@ module.exports = {
                         exclude: sassModuleRegex,
                         use : [
                             {
-                                loader:requrie.resolve('css-loader'),
+                                loader:require.resolve('css-loader'),
                                 options:{
                                     importLoaders:3,
                                     modules:{
@@ -127,7 +127,7 @@ module.exports = {
                                     },
                                 },
                             },
-                            require.resovle('sass-loader'),
+                            // require.resovle('sass-loader'),
                         ],
                     },
                     // url-loader를 위한 설정

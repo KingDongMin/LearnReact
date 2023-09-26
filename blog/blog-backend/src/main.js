@@ -1,8 +1,10 @@
 require('dotenv').config(); 
-const Koa = require('koa');
-const Router = require('koa-router');
-const bodyParser = require('koa-bodyparser'); // Request의 body에 JSON형태로 데이터를 넣어 주는 패키지
-const mongoose = require('mongoose');
+import Koa from 'koa';
+import Router from 'koa-router';
+import bodyParser from 'koa-bodyparser';
+import mongoose from 'mongoose';
+
+import api from './api';
 
 const {PORT, MONGO_URI} = process.env;
 
@@ -14,10 +16,6 @@ mongoose
 .catch(e=>{
   console.log(e);
 });
-
-
-// 라우터 가져오기
-const api = require('./api')
 
 const app = new Koa();
 const router = new Router();

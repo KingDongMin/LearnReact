@@ -353,6 +353,7 @@ __metadata:
     dotenv: ^16.3.1
     eslint: ^8.49.0
     eslint-config-prettier: ^9.0.0
+    esm: ^3.2.25
     koa: ^2.13.1
     koa-bodyparser: ^4.4.1
     koa-router: ^12.0.0
@@ -863,6 +864,13 @@ __metadata:
   bin:
     eslint: bin/eslint.js
   checksum: 4dfe257e1e42da2f9da872b05aaaf99b0f5aa022c1a91eee8f2af1ab72651b596366320c575ccd4e0469f7b4c97aff5bb85ae3323ebd6a293c3faef4028b0d81
+  languageName: node
+  linkType: hard
+
+"esm@npm:^3.2.25":
+  version: 3.2.25
+  resolution: "esm@npm:3.2.25"
+  checksum: 978aabe2de83541c105605a6d60a26ed8e627ef6bb0a7605fe15a95bbdea6b8348bd045255cb22219c054dd09a81a94823df00843d9e97f42419c92015ce3a64
   languageName: node
   linkType: hard
 

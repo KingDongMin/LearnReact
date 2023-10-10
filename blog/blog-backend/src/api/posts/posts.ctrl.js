@@ -36,7 +36,21 @@ export const list = async (ctx) =>{
     }
 }
 
-// export const read = ctx =>{}
+// 특정 데이터 조회
+export const read = async ctx =>{
+    const {id} = ctx.params
+    try{
+        const post = await Post.findById(id).exec();
+        if(!post){
+            ctx.status = 404;
+            return;
+        }
+        ctx.body = post;
+
+    }catch(error){
+        ctx.throw(500,error);
+    }
+}
 
 // export const remove = ctx => {}
 

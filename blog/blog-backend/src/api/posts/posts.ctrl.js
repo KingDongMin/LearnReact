@@ -25,7 +25,16 @@ export const write = async ctx =>{
     }
 };
 
-// export const list = ctx =>{}
+// 데이터 조회
+export const list = async (ctx) =>{
+    try {
+        const posts = await Post.find().exec();
+        ctx.body = posts;
+
+    } catch (error) {
+        ctx.throw(500,error);
+    }
+}
 
 // export const read = ctx =>{}
 

@@ -5,7 +5,7 @@ const posts  = new Router();
 
 // postsCtrl
 posts.post('/', postsCtrl.write);
-// posts.get('/', postsCtrl.list);
+posts.get('/', postsCtrl.list);
 // posts.get('/:id', postsCtrl.read);
 // posts.delete('/:id', postsCtrl.remove);
 // posts.patch('/:id', postsCtrl.update);

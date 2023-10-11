@@ -58,6 +58,12 @@ export const register = async ctx=>{
         // !! serialize로 대처
         ctx.body = user.serialize();
         
+        // 토큰을 쿠키에 담는 방식
+        const token = user.generateToken();
+        ctx.cookies.set('access_token',token, {
+            maxAge : 1000 * 60 * 60 * 24 * 7, // 7일
+            httpOnly : true, // js로 쿠키를 조회할 수 없도록 하는 설정
+        });
         
     } catch (error) {
         ctx.throw(500, error)
@@ -91,6 +97,13 @@ export const login = async ctx =>{
         }
 
         ctx.body = user.serialize(); // 비번을 지운채 응답
+
+        // 토큰을 쿠키에 담기
+        const token = user.generateToken();
+        ctx.cookies.set('access_token',token,{
+            maxAge : 1000 * 60 * 60 * 24 * 7,
+            httpOnly : true
+        });
     } catch (error) {
         ctx.throw(500, error)
     }

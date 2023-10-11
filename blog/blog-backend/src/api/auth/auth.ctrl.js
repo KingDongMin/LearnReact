@@ -67,7 +67,33 @@ export const register = async ctx=>{
 
 // 로그인
 export const login = async ctx =>{
+    const {username, password } = ctx.request.body;
+    
+    // 아이디와 패스워드가 없다면 에러
+    if( !username || !password){
+        ctx.status = 401 // Unauthorized
+        return;
+    }
 
+    try {
+        const user = await User.findByUsername(username); // 계정 확인
+        // 계정이 없다면 에러 출력
+        if(!user){
+            ctx.status = 401;
+            return;
+        }
+
+        // 비밀번호 확인
+        const vaild = await user.checkPassword(password);
+        if(!vaild){
+            ctx.status = 401;
+            return;
+        }
+
+        ctx.body = user.serialize(); // 비번을 지운채 응답
+    } catch (error) {
+        ctx.throw(500, error)
+    }
 }
 
 // 로그인 상태 확인

@@ -22,5 +22,14 @@ UserSchema.method.checkPassword = async function(password){
     return result; // t & f
 }
 
+// 모델 메서드 : 스태틱 메서드
+// 모델에서 바로 사용할 수 있는 함수
+// 방식 : 모델인스턴스.static.메서드이름 = 함수
+UserSchema.static.findByUsername = function(username){
+    return this.findOne({username})
+}
+
+// ? 인스턴스와 스태틱의 차이점은 무엇일까?
+
 const User = mongoose.model('User', UserSchema);
 export default User;

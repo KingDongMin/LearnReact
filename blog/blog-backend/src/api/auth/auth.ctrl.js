@@ -120,7 +120,8 @@ export const check = async ctx=>{
     ctx.body = user;
 }
 
-// 로그아웃
+// 로그아웃 : 토큰을 지우면 로그아웃 완성
 export const logout = async ctx=>{
-
+    ctx.cookies.set('access_token');
+    ctx.status = 204; // no content
 }

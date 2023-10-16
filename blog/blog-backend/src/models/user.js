@@ -48,8 +48,7 @@ UserSchema.methods.generateToken = function(){
         },
         process.env.JWT_SECRET,
         {
-            // expiresIn : '7d' // 유효기간 7일
-            expiresIn : '3d' // 유효기간 3일 -> 토큰 재발급 확인 용
+            expiresIn : '7d' // 유효기간 7일
 
         }
     );

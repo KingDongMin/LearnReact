@@ -111,7 +111,13 @@ export const login = async ctx =>{
 
 // 로그인 상태 확인
 export const check = async ctx=>{
-
+    const {user} = ctx.state;
+    if(!user){
+        // 로그인 중이 아님
+        ctx.status = 401; // Unauthorized
+        return;
+    }
+    ctx.body = user;
 }
 
 // 로그아웃

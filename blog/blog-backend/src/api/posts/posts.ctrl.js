@@ -79,6 +79,8 @@ export const write = async ctx =>{
 };
 
 // 데이터 조회
+// GET / api / posts ? username=  & tag=   & page=
+// 특정 사용자가 작성한 포스트만 조회 및 특정 태그를 포함한 포스트만 조회하는 기능 구현
 export const list = async (ctx) =>{
     const page = parseInt(ctx.query.page || '1' , 10);
 
@@ -87,14 +89,22 @@ export const list = async (ctx) =>{
         return;
     }
 
+    // 특정 태그나 특정 사용자 검색
+    const {tag, username } = ctx.query;
+    // tag, username 값이 유효하면 객체 안에 넣고, 그렇지 않으면 넣지 않음
+    const query = {
+        ...(username ? {'username' : username } : {}),
+        ...(tag ? {tags : tag } : {}),
+    }
+
     try {
-        const posts = await Post.find()
+        const posts = await Post.find(query)
         .sort({ _id : -1})
         .limit(10)
         .skip((page - 1 ) * 10)
         .exec();
 
-        const postCount = await Post.countDocuments().exec();
+        const postCount = await Post.countDocuments(query).exec();
         ctx.set('Last-page', Math.ceil(postCount / 10));
 
         ctx.body = posts

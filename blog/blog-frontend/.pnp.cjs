@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@redux-devtools/extension", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:3.2.5"],\
             ["@testing-library/jest-dom", "npm:5.17.0"],\
             ["@testing-library/react", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:13.5.0"],\
@@ -4120,6 +4121,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@redux-devtools/extension", [\
+        ["npm:3.2.5", {\
+          "packageLocation": "./.yarn/cache/@redux-devtools-extension-npm-3.2.5-77198d5152-c89680e1af.zip/node_modules/@redux-devtools/extension/",\
+          "packageDependencies": [\
+            ["@redux-devtools/extension", "npm:3.2.5"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:3.2.5", {\
+          "packageLocation": "./.yarn/__virtual__/@redux-devtools-extension-virtual-1fe80db50d/0/cache/@redux-devtools-extension-npm-3.2.5-77198d5152-c89680e1af.zip/node_modules/@redux-devtools/extension/",\
+          "packageDependencies": [\
+            ["@redux-devtools/extension", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:3.2.5"],\
+            ["@babel/runtime", "npm:7.23.2"],\
+            ["@types/redux", null],\
+            ["immutable", "npm:4.3.4"],\
+            ["redux", "npm:4.2.1"]\
+          ],\
+          "packagePeers": [\
+            "@types/redux",\
+            "redux"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@remix-run/router", [\
         ["npm:1.10.0", {\
           "packageLocation": "./.yarn/cache/@remix-run-router-npm-1.10.0-30d88d7656-f8f9fcd5f0.zip/node_modules/@remix-run/router/",\
@@ -6498,6 +6523,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["blog-frontend", "workspace:."],\
+            ["@redux-devtools/extension", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:3.2.5"],\
             ["@testing-library/jest-dom", "npm:5.17.0"],\
             ["@testing-library/react", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:13.5.0"],\
@@ -10331,6 +10357,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/immer-npm-9.0.21-03c48c58ea-70e3c27416.zip/node_modules/immer/",\
           "packageDependencies": [\
             ["immer", "npm:9.0.21"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["immutable", [\
+        ["npm:4.3.4", {\
+          "packageLocation": "./.yarn/cache/immutable-npm-4.3.4-2f54cf641b-de3edd964c.zip/node_modules/immutable/",\
+          "packageDependencies": [\
+            ["immutable", "npm:4.3.4"]\
           ],\
           "linkType": "HARD"\
         }]\

@@ -31,6 +31,7 @@ export const login = createAction(LOGIN, ({username, password})=>({
 // 사가 생성
 const registerSaga = createRequestSaga(REGISTER, authAPI.register);
 const loginSaga = createRequestSaga(LOGIN, authAPI.login);
+
 export function* authSaga(){
     yield takeLatest(REGISTER, registerSaga);
     yield takeLatest(LOGIN, loginSaga);
@@ -59,6 +60,7 @@ const auth = handleActions(
         [INITIALIZE_FORM] : (state, {payload: form}) => ({
             ...state,
             [form] : initialState[form],
+            authError: null,
         }),
         //화원가입 성공
         [REGISTER_SUCCESS] : (state, {payload: auth})=>({
@@ -69,7 +71,7 @@ const auth = handleActions(
         // 회원가입 실패
         [REGISTER_FAILURE] : ( state, {payload : error })=>({
             ...state,
-            authError : null
+            authError : error
         }),
         //로그인 성공
         [LOGIN_SUCCESS] : (state, {payload : auth}) => ({

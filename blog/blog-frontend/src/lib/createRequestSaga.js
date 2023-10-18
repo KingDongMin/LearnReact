@@ -4,13 +4,15 @@ import { startLoading, finishLoading } from '../modules/loading'
 // 액션타입 쉽게 만들기 ( 성공 실패 부분)
 export const createRequestActionTypes = type =>{
     const SUCCESS = `${type}_SUCCESS`;
-    const FAILURE = `${type}_FAILRUE`;
+    const FAILURE = `${type}_FAILURE`;
     return [type, SUCCESS, FAILURE];
 }
 
 
 export default function createRequestSaga(type, request){
-    
+    const SUCCESS = `${type}_SUCCESS`;
+    const FAILURE = `${type}_FAILURE`;
+
     return function*(action){
         yield put(startLoading(type));
         try {

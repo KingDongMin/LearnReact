@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:13.5.0"],\
             ["axios", "npm:1.5.1"],\
             ["immer", "npm:10.0.3"],\
+            ["qs", "npm:6.11.2"],\
             ["quill", "npm:1.3.7"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:18.2.0"],\
@@ -6609,6 +6610,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:13.5.0"],\
             ["axios", "npm:1.5.1"],\
             ["immer", "npm:10.0.3"],\
+            ["qs", "npm:6.11.2"],\
             ["quill", "npm:1.3.7"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:18.2.0"],\
@@ -15319,6 +15321,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/qs-npm-6.11.0-caf1bc9dea-6e1f29dd53.zip/node_modules/qs/",\
           "packageDependencies": [\
             ["qs", "npm:6.11.0"],\
+            ["side-channel", "npm:1.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:6.11.2", {\
+          "packageLocation": "./.yarn/cache/qs-npm-6.11.2-b118bc1c6f-e812f3c590.zip/node_modules/qs/",\
+          "packageDependencies": [\
+            ["qs", "npm:6.11.2"],\
             ["side-channel", "npm:1.0.4"]\
           ],\
           "linkType": "HARD"\

@@ -1,8 +1,23 @@
 import Post from '../../models/post';
 import mongoose from 'mongoose';
 import Joi from 'joi';
+import sanitizeHtml from 'sanitize-html';
+
 
 const { ObjectId } = mongoose.Types;
+
+// 특정 html
+const sanitizeOption = {
+    allowedTags: [
+        'h1','h2','b','i','u','s','p','ul','ol','li','blockquote','a','img'
+    ],
+    allowedAttributes : {
+        a:['href', 'name', 'target'],
+        img:['src'],
+        li:['class']
+    },
+    allowedSchemes: ['data',"http"]
+}
 
 // 작성자만이 포스트 수정 삭제 구현 -> 위 작업을 미들웨어로 처리하기 위해 id로 포스트 조회하는 작업도 미들웨어로 변경
 // export const checkObjectId = (ctx, next)=>{
@@ -62,7 +77,7 @@ export const write = async ctx =>{
     const {title, body, tags } = ctx.request.body;
     const post = new Post({
         title,
-        body,
+        body : sanitizeHtml(body, sanitizeOption),
         tags,
         user: ctx.state.user // 사용자 정보 추가 ( 로그인 후 )
     });
@@ -77,6 +92,16 @@ export const write = async ctx =>{
 
     }
 };
+
+// html을 없애고 내용이 길면 200자로 제한하는 함수
+const removeHtmlAndShorten = body => {
+    const filtered = sanitizeHtml(body, {
+        allowedTags: [],
+    })
+
+    return filtered.length < 200 ? filtered : `${filtered.slice(0, 200)}...`;
+}
+
 
 // 데이터 조회
 // GET / api / posts ? username=  & tag=   & page=
@@ -111,7 +136,7 @@ export const list = async (ctx) =>{
         .map(post => post.toJSON())
         .map(post=> ({
             ...post,
-            body : post.body.length < 3 ? post.body : `${post.body.slice(0,3)}...`
+            body : removeHtmlAndShorten(post.body)
         }));
 
     } catch (error) {
@@ -167,8 +192,13 @@ export const update = async ctx => {
         return;
     }
 
+    const nextData = {...ctx.request.body};
+    if(nextData.body){
+        nextData.body = sanitizeHtml(nextData.body, sanitizeOption);
+    }
+
     try {
-        const post = await Post.findByIdAndUpdate(id, ctx.request.body, {
+        const post = await Post.findByIdAndUpdate(id, nextData, {
             new: true,
             // true는 업데이트된 데이터, false는 업데이트 전 데이터
         }).exec();

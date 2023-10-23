@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import palette from '../../lib/styles/palette';
 import SubInfo from '../common/SubInfo';
 import Tags from '../common/Tags';
+import {Helmet} from 'react-helmet-async'
 
 // 스타일 컴포넌트s
 const PostViewerBlock = styled.div`
@@ -41,6 +42,9 @@ const PostViewer = ({post, error, loading, actionButtons}) => {
   
     return (
     <PostViewerBlock>
+        <Helmet>
+            <title>{title} - REACTERS</title>
+        </Helmet>
         <PostHead>
             <h1>{title}</h1>
             <SubInfo

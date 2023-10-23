@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["quill", "npm:1.3.7"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:18.2.0"],\
+            ["react-helmet-async", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:1.3.0"],\
             ["react-redux", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:8.1.3"],\
             ["react-router-dom", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:6.17.0"],\
             ["react-scripts", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:5.0.1"],\
@@ -6614,6 +6615,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["quill", "npm:1.3.7"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:18.2.0"],\
+            ["react-helmet-async", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:1.3.0"],\
             ["react-redux", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:8.1.3"],\
             ["react-router-dom", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:6.17.0"],\
             ["react-scripts", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:5.0.1"],\
@@ -10596,6 +10598,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["get-intrinsic", "npm:1.2.1"],\
             ["has", "npm:1.0.4"],\
             ["side-channel", "npm:1.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["invariant", [\
+        ["npm:2.2.4", {\
+          "packageLocation": "./.yarn/cache/invariant-npm-2.2.4-717fbdb119-cc3182d793.zip/node_modules/invariant/",\
+          "packageDependencies": [\
+            ["invariant", "npm:2.2.4"],\
+            ["loose-envify", "npm:1.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -15525,6 +15537,46 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-error-overlay-npm-6.0.11-021cdeaa92-ce7b44c38f.zip/node_modules/react-error-overlay/",\
           "packageDependencies": [\
             ["react-error-overlay", "npm:6.0.11"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-fast-compare", [\
+        ["npm:3.2.2", {\
+          "packageLocation": "./.yarn/cache/react-fast-compare-npm-3.2.2-45b585a872-2071415b4f.zip/node_modules/react-fast-compare/",\
+          "packageDependencies": [\
+            ["react-fast-compare", "npm:3.2.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-helmet-async", [\
+        ["npm:1.3.0", {\
+          "packageLocation": "./.yarn/cache/react-helmet-async-npm-1.3.0-240f565ac8-7ca7e47f8a.zip/node_modules/react-helmet-async/",\
+          "packageDependencies": [\
+            ["react-helmet-async", "npm:1.3.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:1.3.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-helmet-async-virtual-75f10a68e5/0/cache/react-helmet-async-npm-1.3.0-240f565ac8-7ca7e47f8a.zip/node_modules/react-helmet-async/",\
+          "packageDependencies": [\
+            ["react-helmet-async", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:1.3.0"],\
+            ["@babel/runtime", "npm:7.23.2"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["invariant", "npm:2.2.4"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:ec12205139344bbc714e291e1964d888db0516a06dcc20b30d61c3988454f7e968f197647fac42a0910124d03ee13040f45a950e7111306d1e6858533b3d6c79#npm:18.2.0"],\
+            ["react-fast-compare", "npm:3.2.2"],\
+            ["shallowequal", "npm:1.1.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\

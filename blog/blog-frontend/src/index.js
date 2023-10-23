@@ -10,6 +10,7 @@ import { composeWithDevTools } from '@redux-devtools/extension';
 import {Provider} from 'react-redux'
 import createSagaMiddleware from 'redux-saga'
 import { tempSetUser, check } from './modules/user';
+import { HelmetProvider } from 'react-helmet-async'
 
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(sagaMiddleware)));
@@ -34,7 +35,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
     <BrowserRouter>
+      <HelmetProvider>
         <App />
+      </HelmetProvider>
     </BrowserRouter>
   </Provider>
   

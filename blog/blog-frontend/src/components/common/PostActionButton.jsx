@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import palette from '../../lib/styles/palette';
+import AskRemoveModal from '../post/AskRemoveModal';
+import { useState, useCallback } from 'react';
 
 
 const PostActionButtonBlock = styled.div`
@@ -27,12 +29,32 @@ const ActionButton = styled.button`
     }
 `
 
-const PostActionButton = ({onEdit}) => {
-  return (
-    <PostActionButtonBlock>
-        <ActionButton onClick={onEdit}>수정</ActionButton>
-        <ActionButton>삭제</ActionButton>
-    </PostActionButtonBlock>
+const PostActionButton = ({onEdit, onRemove}) => {
+    const [modal, setModal] = useState(false);
+    const onRemoveClick = () =>{
+        setModal(true);
+    };
+    const onCancel = () =>{
+        setModal(false)
+    }
+    const onConfirm = ()=>{
+        setModal(false);
+        onRemove();
+    }
+
+    return (
+        <>
+            <PostActionButtonBlock>
+                <ActionButton onClick={onEdit}>수정</ActionButton>
+                <ActionButton onClick={onRemoveClick}>삭제</ActionButton>
+            </PostActionButtonBlock>
+            <AskRemoveModal
+                visible={modal}
+                onConfirm={onConfirm}
+                onCancel={onCancel}
+            />
+        </>
+    
     )
 }
 

@@ -5,6 +5,7 @@ import { readPost, unloadPost } from '../../modules/post';
 import PostViewer from '../../components/post/PostViewer';
 import PostActionButton from '../../components/common/PostActionButton';
 import { setOriginalPost } from '../../modules/write';
+import { removePost } from '../../lib/api/posts';
 
 
 const PostViewerContainer = () =>{
@@ -32,9 +33,25 @@ const PostViewerContainer = () =>{
         navigate('/write')
     }
 
+    const onRemove = async ()=>{
+        try{
+            await removePost(postId);
+            navigate('/');
+
+        }catch(error){
+            console.log(error);
+        }
+    }
+
     const ownPost = (user && user._id) === (post && post.user._id);
 
-    return <PostViewer post={post} loading={loading} error={error} actionButtons={ownPost && <PostActionButton onEdit={onEdit}/>}/>
+    return <PostViewer 
+                post={post}
+                loading={loading}
+                error={error}
+                actionButtons={ownPost && <PostActionButton onEdit={onEdit} onRemove={onRemove}/>
+
+            }/>
 }
 
 export default PostViewerContainer;
